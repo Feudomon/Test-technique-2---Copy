@@ -2,7 +2,7 @@
 
 //test values
 vector<int> tooSmall{2,5};
-vector<int> tooBig{10,0,5,5,7,2,3,7,0,5,0,0,0,0,0,0,0,10,10,0,4,5,5};
+vector<int> tooBig{10,0,5,5,7,2,3,7,0,5,0,0,0,0,0,10,10,0,4,5,5,4,2};
 vector<int> turnBiggerThan10{0,0,0,0,0,0,7,8,0,0,0,0,0,0,0,0,0,0,0,0};
 vector<int> finalThrowNotASpare{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,1};
 vector<int> finalThrowIsASpare{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,6,1};
