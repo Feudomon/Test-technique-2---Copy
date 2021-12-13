@@ -11,10 +11,10 @@ int calculator(vector<int> lancers) {
     int scoreTotal(0);
     int turnPoints;
 
-    if (lancersSize < 20 || lancersSize > 22) {
-        cout << "Nombre de lancers incorrect, fin" << endl; //Vérifie que le tableau entré contient bien de 20 à 22 lancers
-        return scoreTotal;
-    }
+    if (lancersSize < 20 || lancersSize > 22 || ( lancers[18] != 10 && lancersSize == 22) || (lancers[18] + lancers[19] != 10 && lancersSize == 21)) {
+        cout << "Nombre de lancers incorrect, fin" << endl; //Vérifie que le tableau entré entre dans les cas suivants : Nombre de lancers entre 20 et 22
+        return scoreTotal;                                  //                                                           Dernier lancer est un strike et nombre de lancers = 22
+    }                                                       //                                                           Dernier lancer est un spare et nombre de lancers = 21
 
     for (int i(1); i < 20; i += 2) {
         turnPoints = lancers[i-1] + lancers [i]; //Calcule le total du tour (sans compter strike et spare)
